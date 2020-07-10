@@ -77,4 +77,5 @@ function twoSumTwo($nums, $target){
 $nums=[3,3];
 $target = 6;
 $res = twoSumOne($nums, $target);
+//$res = twoSumTwo($nums, $target);
 print_r($res);die;
