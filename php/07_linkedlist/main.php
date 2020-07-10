@@ -77,6 +77,7 @@ Class SingleLinkedListAlgo
 
         // 保存头结点，稍后指向反转后的链表
         $headNode = $this->list->head;
+//        print_r($headNode);die;
         // 断开头结点的next指针
         $this->list->head->next = null;
 

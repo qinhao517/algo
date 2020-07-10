@@ -84,7 +84,7 @@ class SingleLinkedList
             return false;
         }
 
-        // 获取待删除节点的前置节点
+        // 获取待删除节点的前置节点（有些看不懂，备注一下，多看几遍）
         $preNode = $this->getPreNode($node);
 
         // 修改指针指向
