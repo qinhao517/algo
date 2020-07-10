@@ -54,7 +54,7 @@ function twoSumOne($nums, $target){
     unset($old_nums[$fir_key]);//解决相同值只返回同一个位置key的情况
     $sec_key = array_keys($old_nums,$sec_value)[0];
     return [$fir_key,$sec_key];
-}g
+}
 
 /**
  * 解法二
