@@ -31,8 +31,7 @@ void insert(struct single_list **prev, struct single_list *elem)
 	if (!prev)
 		return;
 
-	if (*prev)
-		elem->next = *prev;
+	elem->next = *prev;
 	*prev = elem;
 }
 
@@ -47,7 +46,8 @@ struct single_list* del(struct single_list **prev)
 
 	if (!prev)
 		return NULL;
-
+	if (*prev == NULL)
+		return NULL;
 	tmp = *prev;
 	*prev = (*prev)->next;
 	tmp->next = NULL;
